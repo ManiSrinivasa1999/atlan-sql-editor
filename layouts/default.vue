@@ -32,31 +32,20 @@
       <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
       </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      <v-toolbar-title
+        class="font-weight-bold text-h4 text-primary"
+        v-text="title"
+      />
+      <v-spacer />
+      <v-btn @click="$vuetify.theme.dark = !$vuetify.theme.dark">Theme</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light> mdi-repeat </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
+    <v-footer app class="text-center">
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -72,20 +61,70 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-home',
+          title: 'Home',
           to: '/',
         },
         {
+          icon: 'mdi-apps',
+          title: 'Categories',
+          to: '/categories',
+        },
+        {
+          icon: 'mdi-account-group',
+          title: 'Customers',
+          to: '/customers',
+        },
+        {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          title: 'Employee Territories',
+          to: '/employee-territories',
+        },
+        {
+          icon: 'mdi-account-group',
+          title: 'Employees',
+          to: '/employees',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Order Details',
+          to: '/order-details',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Orders',
+          to: '/orders',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Products',
+          to: '/products',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Regions',
+          to: '/regions',
+        },
+        {
+          icon: 'mdi-account-group',
+          title: 'Shippers',
+          to: '/shippers',
+        },
+        {
+          icon: 'mdi-account-group',
+          title: 'Suppliers',
+          to: '/suppliers',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Territories',
+          to: '/territories',
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'Sql Queries',
     }
   },
 }
