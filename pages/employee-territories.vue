@@ -1,13 +1,8 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12">
-      <v-data-table
-        :headers="employeeTerritoriesHeaders"
-        :items="employeeTerritoriesData.body"
-        class="elevation-1"
-      ></v-data-table>
-    </v-col>
-  </v-row>
+  <Table
+    :headers="employeeTerritoriesHeaders"
+    :items="employeeTerritoriesData.body"
+  />
 </template>
 
 <script>

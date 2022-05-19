@@ -38,7 +38,9 @@
         v-text="title"
       />
       <v-spacer />
-      <v-btn @click="$vuetify.theme.dark = !$vuetify.theme.dark">Theme</v-btn>
+      <v-btn icon @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+        ><v-icon> mdi-theme-light-dark </v-icon></v-btn
+      >
     </v-app-bar>
     <v-main>
       <v-container>

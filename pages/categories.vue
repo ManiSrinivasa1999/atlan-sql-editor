@@ -1,18 +1,14 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12">
-      <v-data-table
-        :headers="categoriesHeaders"
-        :items="categoriesData.body"
-        class="elevation-1"
-      ></v-data-table>
-    </v-col>
-  </v-row>
+  <Table :headers="categoriesHeaders" :items="categoriesData.body" />
 </template>
 
 <script>
+import Table from '../components/Table.vue'
 export default {
   name: 'CategoriesPage',
+  components: {
+    Table,
+  },
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'csv/categories'
     const categoriesData = await $content(slug)

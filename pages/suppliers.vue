@@ -1,13 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12">
-      <v-data-table
-        :headers="suppliersHeaders"
-        :items="suppliersData.body"
-        class="elevation-1"
-      ></v-data-table>
-    </v-col>
-  </v-row>
+  <Table :headers="suppliersHeaders" :items="suppliersData.body" />
 </template>
 
 <script>

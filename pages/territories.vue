@@ -1,13 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12">
-      <v-data-table
-        :headers="territoriesHeaders"
-        :items="categoriesData.body"
-        class="elevation-1"
-      ></v-data-table>
-    </v-col>
-  </v-row>
+  <Table :headers="territoriesHeaders" :items="territoriesData.body" />
 </template>
 
 <script>
@@ -15,13 +7,13 @@ export default {
   name: 'TerritoriesPage',
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'csv/territories'
-    const categoriesData = await $content(slug)
+    const territoriesData = await $content(slug)
       .fetch()
       .catch((_err) => {
         error({ statusCode: 404, message: 'Page not found' })
       })
     return {
-      categoriesData,
+      territoriesData,
     }
   },
   data() {
