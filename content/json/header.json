@@ -1,0 +1,120 @@
+{
+  "Categories": [
+    {
+      "text": "Category ID",
+      "value": "categoryID"
+    },
+    {
+      "text": "Category Name",
+      "value": "categoryName"
+    },
+    {
+      "text": "Description",
+      "value": "description"
+    },
+    {
+      "text": "Picture",
+      "value": "picture"
+    }
+  ],
+  "Customers": [
+    { "text": "Customer ID", "value": "customerID" },
+    { "text": "Company Name", "value": "companyName" },
+    { "text": "Contact Name", "value": "contactName" },
+    { "text": "Contact Title", "value": "contactTitle" },
+    { "text": "Address", "value": "address" },
+    { "text": "City", "value": "city" },
+    { "text": "Region", "value": "region" },
+    { "text": "Postal Code", "value": "postalCode" },
+    { "text": "Country", "value": "country" },
+    { "text": "Phone", "value": "phone" },
+    { "text": "Fax", "value": "fax" }
+  ],
+  "EmployeeTerritories": [
+    { "text": "Employee ID", "value": "employeeID" },
+    { "text": "Territory Name", "value": "territoryID" }
+  ],
+  "Employees": [
+    { "text": "Employee ID", "value": "employeeID" },
+    { "text": "Last name", "value": "lastName" },
+    { "text": "First name", "value": "firstName" },
+    { "text": "Title", "value": "title" },
+    { "text": "Title of courtesy", "value": "titleOfCourtesy" },
+    { "text": "Birth date", "value": "birthDate" },
+    { "text": "Hire date", "value": "hireDate" },
+    { "text": "Address", "value": "address" },
+    { "text": "City", "value": "city" },
+    { "text": "Region", "value": "region" },
+    { "text": "Postal code", "value": "postalCode" },
+    { "text": "Country", "value": "country" },
+    { "text": "Home phone", "value": "homePhone" },
+    { "text": "Extension", "value": "extension" },
+    { "text": "Photo", "value": "photo" },
+    { "text": "Notes", "value": "notes" },
+    { "text": "Reports to", "value": "reportsTo" },
+    { "text": "Photo path", "value": "photoPath" }
+  ],
+  "OrderDetails": [
+    { "text": "Order ID", "value": "orderID" },
+    { "text": "Product ID", "value": "productID" },
+    { "text": "Unit Price", "value": "unitPrice" },
+    { "text": "Quantity", "value": "quantity" },
+    { "text": "Discount", "value": "discount" }
+  ],
+  "Orders": [
+    { "text": "Order ID", "value": "orderID" },
+    { "text": "Customer ID", "value": "customerID" },
+    { "text": "Employee ID", "value": "employeeID" },
+    { "text": "Order Date", "value": "orderDate" },
+    { "text": "Required Date", "value": "requiredDate" },
+    { "text": "Shipped Date", "value": "shippedDate" },
+    { "text": "Ship Via", "value": "shipVia" },
+    { "text": "Freight", "value": "freight" },
+    { "text": "Ship Name", "value": "shipName" },
+    { "text": "Ship Address", "value": "shipAddress" },
+    { "text": "Ship City", "value": "shipCity" },
+    { "text": "Ship Region", "value": "shipRegion" },
+    { "text": "Ship Postal Code", "value": "shipPostalCode" },
+    { "text": "Ship Country", "value": "shipCountry" }
+  ],
+  "Products": [
+    { "text": "Product ID", "value": "productID" },
+    { "text": "Product Name", "value": "productName" },
+    { "text": "Supplier ID", "value": "supplierID" },
+    { "text": "Category ID", "value": "categoryID" },
+    { "text": "Quantity Per Unit", "value": "quantityPerUnit" },
+    { "text": "Unit Price", "value": "unitPrice" },
+    { "text": "Units In Stock", "value": "unitsInStock" },
+    { "text": "Units On Order", "value": "unitsOnOrder" },
+    { "text": "Reorder Level", "value": "reorderLevel" },
+    { "text": "Riscontinued", "value": "discontinued" }
+  ],
+  "Regions": [
+    { "text": "Region ID", "value": "regionID" },
+    { "text": "Region Description", "value": "regionDescription" }
+  ],
+  "Shippers": [
+    { "text": "Shipper ID", "value": "shipperID" },
+    { "text": "Company Name", "value": "companyName" },
+    { "text": "Phone", "value": "phone" }
+  ],
+  "Suppliers": [
+    { "text": "Supplier ID", "value": "supplierID" },
+    { "text": "Company Name", "value": "companyName" },
+    { "text": "Contact Name", "value": "contactName" },
+    { "text": "Contact Title", "value": "contactTitle" },
+    { "text": "Address", "value": "address" },
+    { "text": "City", "value": "city" },
+    { "text": "Region", "value": "region" },
+    { "text": "Postal Code", "value": "postalCode" },
+    { "text": "Country", "value": "country" },
+    { "text": "Phone", "value": "phone" },
+    { "text": "Fax", "value": "fax" },
+    { "text": "Home Page", "value": "homePage" }
+  ],
+  "Territories": [
+    { "text": "Territory ID", "value": "territoryID" },
+    { "text": "Territory Description", "value": "territoryDescription" },
+    { "text": "Region ID", "value": "regionID" }
+  ]
+}

@@ -1,6 +1,17 @@
 <template>
-  <v-data-table :headers="headers" :items="items" class="elevation-1">
-  </v-data-table>
+  <v-card v-if="$vuetify.breakpoint.mdAndUp" color="primary">
+    <v-card-text>
+      <v-container>
+        <v-data-table
+          dark
+          :headers="headers"
+          :items="items"
+          :loading="loading"
+          loading-text="Loading data..."
+          class="st-color"
+        >
+        </v-data-table></v-container></v-card-text
+  ></v-card>
 </template>
 
 <script>
@@ -15,6 +26,22 @@ export default {
       type: Array,
       required: true,
     },
+    loading: {
+      type: Boolean,
+      default: true,
+    },
   },
 }
 </script>
+<style>
+.truncate {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.st-color {
+  background-color: #10163a !important;
+}
+</style>

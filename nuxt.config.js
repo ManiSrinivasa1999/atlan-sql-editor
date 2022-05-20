@@ -1,6 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
+  ssr: false,
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - atlan-sql-editor',
@@ -11,7 +11,13 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -62,21 +68,10 @@ export default {
       dark: true,
       themes: {
         dark: {
-          primary: colors.blue,
-          secondary: colors.teal.darken4,
-          accent: colors.teal.accent4,
-
-          error: colors.deepOrange.accent2,
-          info: colors.grey.darken3,
-          success: colors.green.accent3,
-          warning: colors.amber.base,
-        },
-        light: {
-          primary: '#1976D2',
-          secondary: colors.teal.lighten3,
-          accent: colors.teal.accent4,
-
-          error: '#FF5252',
+          primary: '#10163A',
+          secondary: '#5851BE',
+          accent: '#82B1FF',
+          error: '#E4555B',
           info: '#2196F3',
           success: '#4CAF50',
           warning: '#FFC107',
