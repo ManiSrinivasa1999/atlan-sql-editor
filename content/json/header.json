@@ -49,10 +49,31 @@
     { "text": "Country", "value": "country" },
     { "text": "Home phone", "value": "homePhone" },
     { "text": "Extension", "value": "extension" },
+    { "text": "Notes", "value": "notes" },
+    { "text": "Reports to", "value": "reportsTo" },
+    { "text": "Photo path", "value": "photoPath" },
+    { "text": "Photo", "value": "photo" }
+  ],
+  "InnerJoinOfEmployeeAndEmployeeTer": [
+    { "text": "Employee ID", "value": "employeeID" },
+    { "text": "Last name", "value": "lastName" },
+    { "text": "First name", "value": "firstName" },
+    { "text": "Title", "value": "title" },
+    { "text": "Title of courtesy", "value": "titleOfCourtesy" },
+    { "text": "Birth date", "value": "birthDate" },
+    { "text": "Hire date", "value": "hireDate" },
+    { "text": "Address", "value": "address" },
+    { "text": "City", "value": "city" },
+    { "text": "Region", "value": "region" },
+    { "text": "Postal code", "value": "postalCode" },
+    { "text": "Country", "value": "country" },
+    { "text": "Home phone", "value": "homePhone" },
+    { "text": "Extension", "value": "extension" },
     { "text": "Photo", "value": "photo" },
     { "text": "Notes", "value": "notes" },
     { "text": "Reports to", "value": "reportsTo" },
-    { "text": "Photo path", "value": "photoPath" }
+    { "text": "Photo path", "value": "photoPath" },
+    { "text": "Territory Name", "value": "territoryID" }
   ],
   "OrderDetails": [
     { "text": "Order ID", "value": "orderID" },
